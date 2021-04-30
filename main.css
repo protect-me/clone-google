@@ -1,0 +1,132 @@
+/* COMMON */
+body {
+  color: rgba(0,0,0,0.87);
+  font-size: 13px;
+}
+.material-icons {
+  color: #9aa0a6;
+}
+.material-icons.md-20 {
+  font-size: 20px;
+}
+
+/* header */
+.header {
+  padding: 6px;
+  height: 48px;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .menus {
+  width: 112px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .icons {
+  width: 100px;
+  display:flex;
+  align-items: center;
+}
+.header .icons .icon {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+}
+.header .icons .icon .apps-icon {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+}
+.header .icons .icon .avatar {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+/* content */
+.content {
+  border: 1px solid red;
+}
+.content .main-logo {
+  border: 1px solid green;
+  display: block;
+  width: 272px;
+  height: 92px;
+  margin: 0 auto;
+}
+.content .search-box {
+  border: 1px solid green;
+  padding: 20px;
+}
+.content .search-box .container {
+  max-width: 584px;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 5px 8px 0 14px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+.content .search-box .container .prepend-icon {
+  padding-right: 13px;
+  border: 1px solid blue;
+  width: 20px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+}
+.content .search-box .container .input-box {
+  border: 1px solid blue;
+  /* display: flex;
+  flex-wrap: wrap; */
+  flex: 1;
+}
+.content .search-box .container .input-box input {
+  display: block;
+  height: 34px;
+  border: none;
+  outline: none !important;
+  font-size: 16px;
+}
+/* .content .search-box .container .input-box .input:focus {
+  outline: none !important;
+  border:1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+} */
+.content .search-box .container .append-icon {
+  border: 1px solid blue;
+}
+.content .search-box .button-group {
+  border: 1px solid tomato;
+  margin: 0 auto;  
+  display: flex;
+  max-width: 584px;
+  justify-content: center;  
+  padding-top: 18px;
+}
+.content .search-box .button-group .button {
+  border: 1px solid royalblue;
+  background-color: #f8f9fa;
+}
+.content .search-box .button-group .button-left {
+  /* width: 70px; */
+  height: 34px;
+  line-height: 34px;;
+  padding: 0 16px;
+  margin: 11px 4px;
+}
+.content .search-box .button-group .button-right {
+  /* width: 101px; */
+  /* height: 34px; */
+  line-height: 34px;;
+  padding: 0 16px;
+  margin: 11px 4px;
+}
+
+
+/* padding: 5px 8px 0px 14px; */
