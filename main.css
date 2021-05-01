@@ -2,6 +2,8 @@
 body {
   color: rgba(0,0,0,0.87);
   font-size: 13px;
+  display: flex;
+  flex-direction: column;
 }
 .material-icons {
   color: #9aa0a6;
@@ -51,18 +53,13 @@ body {
 }
 
 /* content */
-.content {
-  border: 1px solid red;
-}
 .content .main-logo {
-  border: 1px solid green;
   display: block;
   width: 272px;
   height: 92px;
   margin: 0 auto;
 }
 .content .search-box {
-  border: 1px solid green;
   padding: 20px;
 }
 .content .search-box .container {
@@ -105,9 +102,6 @@ body {
 
 }
 
-/* .content .search-box .container {
-} */
-
 .content .button-group {
   margin: 0 auto;  
   display: flex;
@@ -130,3 +124,30 @@ body {
   margin: 11px 4px;
 }
 
+
+/* footer */
+.footer {
+  background-color: #f2f2f2;
+  color: rgba(0,0,0,.54);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  flex-shrink: 0;
+}
+.footer .nation {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+}
+.footer .policy-container {
+  display: flex;
+  font-size: 14px;
+  padding: 0 20px;
+  justify-content:space-evenly;
+}
+.footer .policy-container .policy-group {
+  display: flex;
+}
+.footer .policy-container .policy-group .part {
+  padding: 15px;
+}
