@@ -2,8 +2,11 @@
 body {
   color: rgba(0,0,0,0.87);
   font-size: 13px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  /* border: 1px solid blue; */
 }
 .material-icons {
   color: #9aa0a6;
@@ -19,10 +22,9 @@ body {
 .header {
   padding: 6px;
   height: 48px;
-}
-.header {
   display: flex;
   justify-content: flex-end;
+  flex-shrink: 0;
 }
 .header .menus {
   width: 112px;
@@ -52,13 +54,25 @@ body {
   border-radius: 50%;
 }
 
-/* content */
-.content .main-logo {
+/* logo */
+.logo {
+  height: calc(100% - 560px);
   display: block;
-  width: 272px;
-  height: 92px;
+  max-height: 290px;
+  min-height: 92px;
+  flex-shrink: 0;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+.logo .main-logo {
+  margin-top: auto;
+  max-height: 92px;
+  /* position: relative; */
+}
+
+/* content */
 .content .search-box {
   padding: 20px;
 }
@@ -99,10 +113,10 @@ body {
   cursor: pointer;  
   display: flex;
   align-items: center;
-
 }
 
 .content .button-group {
+  color: #202124;
   margin: 0 auto;  
   display: flex;
   max-width: 584px;
@@ -110,7 +124,17 @@ body {
   padding-top: 18px;
 }
 .content .button-group .button {
-  background-color: #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #f8f9fa;  
+  border: 1px solid #f8f9fa;
+}
+.content .button-group .button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  border: 1px solid #dadce0;
+  /* background-color: red; */
 }
 .content .button-group .button-left {
   height: 34px;
@@ -125,11 +149,18 @@ body {
 }
 
 
+/* divider */
+.divider {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 /* footer */
 .footer {
+  flex-shrink: 0;
   background-color: #f2f2f2;
   color: rgba(0,0,0,.54);
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   bottom: 0;
   flex-shrink: 0;
@@ -150,4 +181,8 @@ body {
 }
 .footer .policy-container .policy-group .part {
   padding: 15px;
+  cursor: pointer;
+}
+.footer .policy-container .policy-group .part:hover {
+  text-decoration: underline;
 }
