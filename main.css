@@ -17,6 +17,24 @@ body {
 .material-icons.md-24 {
   font-size: 24px;
 }
+[data-tooltip-text]:hover {
+  position: relative;
+  display: inline-block;
+}
+[data-tooltip-text]:hover:after {
+	content: attr(data-tooltip-text);
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  /* width: auto; */
+	/* min-width: 50px; */
+  /* max-width: 300px; */
+  width: 80px;
+  text-align: center;
+  left: -20px;
+}
 
 /* header */
 .header {
@@ -32,6 +50,10 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.header .menus .menu:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .header .icons {
   width: 100px;
   display:flex;
@@ -41,11 +63,23 @@ body {
   width: 40px;
   height: 40px;
   padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header .icons .icon .apps-icon {
-  width: 24px;
-  height: 24px;
-  padding: 8px;
+.header .icons .icon .inner-circle {
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .icons .icon .inner-circle.avatar {
+  padding: 4px;
+}
+.header .icons .icon .inner-circle:hover {
+  background-color: rgba(60,64,67,0.08);
 }
 .header .icons .icon .avatar {
   width: 32px;
@@ -83,7 +117,11 @@ body {
   margin: 0 auto;
   padding: 5px 8px 0 14px;
   display: flex;
-  /* justify-content: space-around; */
+}
+.content .search-box .container:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  /* background-color: #f2f2f2; */
+  border-color: rgba(223,225,229,0);
 }
 .content .search-box .container .prepend-icon {
   padding-right: 13px;
@@ -91,9 +129,11 @@ body {
   height: 39px;
   display: flex;
   align-items: center;
+  margin-top: -5px;
 }
 .content .search-box .container .input-box {
   flex: 1;
+  margin-top: -5px;
 }
 .content .search-box .container .input-box input {
   display: block;
@@ -105,6 +145,7 @@ body {
 }
 .content .search-box .container .append-icon {
   display: flex;
+  margin-top: -5px;
 }
 .content .search-box .container .append-icon .icon {
   width: 24px;
@@ -114,7 +155,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .content .button-group {
   color: #202124;
   margin: 0 auto;  
