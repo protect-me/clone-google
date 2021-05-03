@@ -8,4 +8,4 @@ https://github.com/protect-me/clone-google
 https://www.google.co.kr/
 
 ## Clone URL (netlify)
-https://jolly-easley-60fde9.netlify.app/
+https://protect-me-google-clone.netlify.app/
